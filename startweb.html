@@ -30,6 +30,20 @@
       overflow-x: hidden;
     }
 
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: var(--blue);
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 1000;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .skip-link:focus { top: 6px; }
+
     h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
 
     /* ─── HEADER ─────────────────────────────── */
@@ -773,6 +787,8 @@
 </head>
 <body>
 
+<a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
 <!-- HEADER -->
 <header id="header">
   <a href="#" class="logo">Start<span>Web</span></a>
@@ -799,6 +815,8 @@
   <a href="#faq" onclick="toggleMenu()">FAQ</a>
   <a href="#contato" onclick="toggleMenu()">Contato</a>
 </div>
+
+<main id="main">
 
 <!-- 1. HERO -->
 <section id="hero">
@@ -1275,6 +1293,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
